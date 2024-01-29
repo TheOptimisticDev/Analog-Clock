@@ -1,6 +1,6 @@
-# Analog-Clock_App
+# Analog-Clock
 
-I developed this Analog clock website using HTML, CSS, and JS languages as part of my portfolio project.
+I developed this Analog clock application using HTML, CSS, and JS languages as part of my portfolio project.
 
 ## Features
 
@@ -23,6 +23,10 @@ I developed this Analog clock website using HTML, CSS, and JS languages as part 
 - HTML
 - CSS/SASS
 - JavaScript
+
+## Screenshot
+
+[screenshot](./assets/images/screenshot.JPG)
 
 ## License 
 
