@@ -26,7 +26,7 @@ I developed this Analog clock application using HTML, CSS, and JS languages as p
 
 ## Screenshot
 
-[screenshot](./assets/images/screenshot.JPG)
+![screenshot](./assets/images/screenshot.JPG)
 
 ## License 
 
