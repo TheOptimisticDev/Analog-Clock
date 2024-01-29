@@ -1,0 +1,127 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #dcdcdc;
+}
+  
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    align-items: center;
+}
+
+h1 {
+    color: #050505;
+    font-size: 3.5em; /* Increase the font size */
+    margin-bottom: 40px;
+    text-shadow: 0 0 0 2px rgb(255, 255, 255), 
+      3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+h6 {
+    padding-bottom: 50px;
+    font-size: x-small;
+    text-transform: uppercase;
+    color: #0f0e0e;
+}
+  
+.clock {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: rgb(252, 252, 252);
+    border: 10px solid rgba(5, 5, 5, 0.907);
+    box-shadow: 0px 0px 30px rgb(3, 3, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  
+.clock span {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 5px;
+    text-align: center;
+    color: #0b0b0b;
+}
+  
+.clock span b {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 20px;
+}
+  
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0f0e0e;
+    z-index: 2;
+}
+  
+.hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+  
+.hand i {
+    position: absolute;
+    background-color: #0f0e0e;
+    width: 5px;
+    height: var(--h);
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+}
+  
+.datetime-info {
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 900;
+}
+  
+#date, #time, #timezone {
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+@media screen and (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .clock {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .hand {
+      height: calc(var(--h) / 2);
+    }
+  
+    span {
+      font-size: 12px;
+    }
+}
